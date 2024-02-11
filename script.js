@@ -1,4 +1,8 @@
 const input = document.getElementById("input");
+const button = document.getElementById("btn");
+const romanText = document.getElementById("roman");
+
+
 
 function romanNumerals(num) {
     const numerals = {
@@ -26,7 +30,7 @@ function romanNumerals(num) {
         num -= item
         };
     });
-    return acc
+   return  roman.innerHTML += acc
 };
 
 console.log(romanNumerals(40));
