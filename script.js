@@ -2,7 +2,14 @@ const input = document.getElementById("input");
 const button = document.getElementById("btn");
 const romanText = document.getElementById("roman");
 
+button.addEventListener("click", showInput);
+let acc = "";
 
+function showInput() {
+    console.log('hello')
+    romanNumerals()
+    romanText.innerText += acc
+}
 
 function romanNumerals(num) {
     const numerals = {
@@ -23,17 +30,18 @@ function romanNumerals(num) {
 
     const reverse = Object.keys(numerals).reverse();
 
-    let acc = "";
+    
     const roman = reverse.forEach(item => {
-        while (item <= num) {
-        acc += numerals[item];
-        num -= item
+        while (item <= input.value) {
+            acc += numerals[item];
+            input.value -= item;
         };
     });
-   return  roman.innerHTML += acc
+    return acc
+
 };
 
-console.log(romanNumerals(40));
+// console.log(romanNumerals(50));
 
 
 
