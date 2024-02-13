@@ -19,6 +19,10 @@ body{
     background-color: var(--color-light-mono);
 }
 
+h1 {
+    font-family: var(--roboto-family);
+}
+
 .roman {
     font-family: var(--roboto-family);
     font-size: 10rem;
