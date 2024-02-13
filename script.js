@@ -2,16 +2,15 @@ const input = document.getElementById("input");
 const button = document.getElementById("btn");
 const romanText = document.getElementById("roman");
 
-button.addEventListener("click", showInput);
-let acc = "";
+button.addEventListener("keydown",(e) => {
+    if (e.key === "Enter" || e.key === "Space" ) {
+        showInput();
+    }
+});
 
-function showInput() {
-    console.log('hello')
-    romanNumerals()
-    romanText.innerText += acc
-}
 
 function romanNumerals(num) {
+    let acc = "";
     const numerals = {
         1000: 'M',
         900: 'CM',
@@ -29,17 +28,21 @@ function romanNumerals(num) {
     };
 
     const reverse = Object.keys(numerals).reverse();
-
-    
     const roman = reverse.forEach(item => {
-        while (item <= input.value) {
+        while (item <= num) {
             acc += numerals[item];
-            input.value -= item;
+            num -= item;
         };
     });
+    
     return acc
-
 };
+
+function showInput() {
+    
+    console.log('hello')
+    romanText.innerText += romanNumerals(input.value)
+}
 
 // console.log(romanNumerals(50));
 
