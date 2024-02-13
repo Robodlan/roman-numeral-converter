@@ -1,3 +1,15 @@
+:root {
+    --roboto-family:  "Roboto", sans-serif;
+    --ubuntu-family:  "Ubuntu Mono", monospace;
+    --font-wg-normal: 100;  
+    --font-wg-weight-md: 300;
+    --font-wg-weight-lg: 400;
+    --font-wg-weight-xlg: 500;
+    --font-wg-weight-xxlg: 700;
+    --font-style-normal: normal;
+    --font-italic:  italic;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -11,11 +23,12 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+/* input[type=number] {
   -moz-appearance: textfield;
-}
+} */
 
 .container {
+    
     display: flex;
     justify-content: center;
     align-items: center;
