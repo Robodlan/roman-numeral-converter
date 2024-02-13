@@ -8,11 +8,50 @@
     --font-wg-weight-xxlg: 700;
     --font-style-normal: normal;
     --font-italic:  italic;
+    --color-light-mono: #e7e4e4;
+    --color-dark-mono: #b4b1b1;
+    --color-darker-mono: #808080;
 }
 
 body{
     margin: 0;
     padding: 0;
+    background-color: var(--color-light-mono);
+}
+
+.roman {
+    font-family: var(--roboto-family);
+    font-size: 10rem;
+    color: var(--color-darker-mono);
+}
+
+input, button {
+    font-family: var(--ubuntu-family);
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    margin: 0.2em;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    
+    /* max-width: 500px; */
+    /* flex-direction: column; */
+}
+
+.mini-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+    margin: 2em;
 }
 
 /* hide arrow on numbers input */
@@ -23,13 +62,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-/* input[type=number] {
+input[type=number] {
   -moz-appearance: textfield;
-} */
-
-.container {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

@@ -38,6 +38,10 @@ function romanNumerals(num) {
 
 function showInput() {
     romanText.innerHTML += romanNumerals(parseInt(input.value))
+    setTimeout(() => {
+        romanText.innerHTML = "";
+        input.value = "";
+    }, 5000)
 }
 
 
