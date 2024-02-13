@@ -2,12 +2,11 @@ const input = document.getElementById("input");
 const button = document.getElementById("btn");
 const romanText = document.getElementById("roman");
 
-button.addEventListener("keydown",(e) => {
-    if (e.key === "Enter" || e.key === "Space" ) {
+button.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
         showInput();
     }
 });
-
 
 function romanNumerals(num) {
     let acc = "";
@@ -28,23 +27,20 @@ function romanNumerals(num) {
     };
 
     const reverse = Object.keys(numerals).reverse();
-    const roman = reverse.forEach(item => {
+    reverse.forEach(item => {
         while (item <= num) {
             acc += numerals[item];
             num -= item;
         };
     });
-    
     return acc
 };
 
 function showInput() {
-    
-    console.log('hello')
-    romanText.innerText += romanNumerals(input.value)
+    romanText.innerHTML += romanNumerals(parseInt(input.value))
 }
 
-// console.log(romanNumerals(50));
+
 
 
 
