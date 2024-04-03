@@ -25,7 +25,6 @@ function romanNumerals(num) {
         4: "IV",
         1: "I"
     };
-
     const reverse = Object.keys(numerals).reverse();
     reverse.forEach(item => {
         while (item <= num) {
@@ -33,6 +32,7 @@ function romanNumerals(num) {
             num -= item;
         };
     });
+    console.log(acc)
     return acc
 };
 
