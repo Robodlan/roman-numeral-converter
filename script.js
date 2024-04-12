@@ -37,7 +37,7 @@ function romanNumerals(num) {
 };
 
 function showInput() {
-    romanText.innerHTML +=  (parseInt(input.value))
+    romanText.innerHTML +=  romanNumerals(parseInt(input.value))
     setTimeout(() => {
         romanText.innerHTML = "";
         input.value = "";
