@@ -11,7 +11,7 @@
     --color-light-mono: #e7e4e4;
     --color-dark-mono: #b4b1b1;
     --color-darker-mono: #808080;
-    --back-ground: radial-gradient(circle at calc(50% - 25px) calc(50% + 25px), #4b4b4b, #000);
+    /* --back-ground: radial-gradient(circle at calc(50% - 25px) calc(50% + 25px), #4b4b4b, #000); */
 }
 
 body{
@@ -41,14 +41,11 @@ input, button {
     color: #757575;
 }
 
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-
-    
     /* max-width: 500px; */
     /* flex-direction: column; */
 }
