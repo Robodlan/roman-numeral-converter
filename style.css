@@ -11,13 +11,13 @@
     --color-light-mono: #e7e4e4;
     --color-dark-mono: #b4b1b1;
     --color-darker-mono: #808080;
-    /* --back-ground: radial-gradient(circle at calc(50% - 25px) calc(50% + 25px), #4b4b4b, #000); */
+    --back-ground: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 4%, rgba(0,212,255,1) 100%);
 }
 
 body{
     margin: 0;
     padding: 0;
-    background: var(--back-ground);
+    background: var(--back-ground)
 }
 
 h1 {
