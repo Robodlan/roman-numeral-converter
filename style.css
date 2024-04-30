@@ -39,6 +39,7 @@ input, button {
     border: none;
     margin: 0.2em;
     border-radius: 9px;
+    cursor: pointer;
 }
 
 .container {
