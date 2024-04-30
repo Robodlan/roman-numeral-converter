@@ -41,6 +41,12 @@ input, button {
     border-radius: 9px;
     cursor: pointer;
 }
+button:hover,
+button:focus {
+    padding: 0.1em;
+    width: 50%;
+    
+}
 
 .container {
     display: flex;
